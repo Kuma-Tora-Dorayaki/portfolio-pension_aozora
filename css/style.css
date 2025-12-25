@@ -139,6 +139,8 @@ header {
 }
 
 .ham-menu-mountain {
+  height: 30%;
+  width: auto;
   position: absolute;
   right: 0;
   bottom: 0;
@@ -164,22 +166,22 @@ header {
   font-family: var(--font-Kaisei);
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 28px;
+  font-size: 16px;
+  line-height: 26px;
   letter-spacing: 0.2em;
   color: var(--border-orange);
   text-align: center;
-  text-shadow:1px 1px 1px black;
+  text-shadow:1px 1px 1px white;
   background: radial-gradient(circle, rgba(255,255,255,0.2), rgba(255,255,255,0));
 }
 
 .main-visual-title
 >span {
   color: white;
-  text-shadow:1px 1px 2px black;
+  text-shadow:1px 1px 2px white;
   font-family: var(--font-Kaisei);
   font-size: 20px;
-  line-height: 40px;
+  line-height: 28px;
 }
 
 /* ----- section-name ----- */
@@ -913,12 +915,12 @@ footer {
   .main-visual-title {
     top: 180px;
     font-size: 32px;
-    line-height: 64px;
+    line-height: 40px;
   }
 
   .main-visual-title > span {
     font-size: 48px;
-    line-height: 72px;
+    line-height: 58px;
   }
 
   /* ===== section-name (min: 768px)===== */
