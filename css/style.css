@@ -281,31 +281,37 @@ header {
   color: white;
   margin: auto;
   text-align: center;
+  text-shadow:1px 1px 2px black;
 }
+
+.sakura,
+.hotaru,
+.hanabi,
+.kouyou,
+.yuki {
+  font-weight: bold;
+  text-shadow:0px 0px 8px white;
+}
+
 
 .sakura {
   color: #FF69B4;
-  font-weight: bold;
 }
 
 .hotaru {
   color: #FFFF00;
-  font-weight: bold;
 }
 
 .hanabi {
   color: greenyellow;
-  font-weight: bold;
 }
 
 .kouyou {
   color: #FF5722;
-  font-weight: bold;
 }
 
 .yuki {
   color: silver;
-  font-weight: bold;
 }
 
 /* ----- facility ----- */
