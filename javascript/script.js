@@ -13,8 +13,6 @@ const mealMenuItem = document.querySelectorAll('.meal-menu__item');
 const mainVisualContainer = document.querySelector('.main-visual__container');
 
 
-
-
 const updateHeaderHeight = () => {
   console.log(headerHeight);
 };
@@ -124,7 +122,11 @@ const scrollAnimation = (entries, observer) => {
       transform: ['translate(0px, 10px)', 'translate(0, 0)'],
     }
     if (entry.isIntersecting) {
-      entry.target.animate(keyframes, 800);
+      entry.target.animate(keyframes, {
+        duration: 800,
+        fill: 'forwards',
+        easing: 'ease-in',
+      });
       console.log(entry.target);
       
       observer.unobserve(entry.target);
@@ -132,24 +134,27 @@ const scrollAnimation = (entries, observer) => {
     }
   });
 };
-const sectionObserber = new IntersectionObserver(scrollAnimation);
+const sectionObserver = new IntersectionObserver(scrollAnimation);
 
 sectionName.forEach((els) => {
-  sectionObserber.observe(els);
+  sectionObserver.observe(els);
 });
 
 aroundTextBlock.forEach((els) => {
-  sectionObserber.observe(els);
+  sectionObserver.observe(els);
 });
 
 const scrollAnimationOpacity = (entries, observer) => {
     entries.forEach((entry) => {
     const keyframes = {
       opacity: [0, 1],
-      // transform: ['translate(0px, 10px)', 'translate(0, 0)'],
     }
     if (entry.isIntersecting) {
-      entry.target.animate(keyframes, 1600);
+      entry.target.animate(keyframes, {
+        duration: 1600,
+        fill: 'forwards',
+        easing: 'ease-in',
+      });
       console.log(entry.target);
       
       observer.unobserve(entry.target);
@@ -158,15 +163,15 @@ const scrollAnimationOpacity = (entries, observer) => {
   });
 };
 
-const OpacityObserber = new IntersectionObserver(scrollAnimationOpacity);
+const OpacityObserver = new IntersectionObserver(scrollAnimationOpacity);
 
-OpacityObserber.observe(mealVisualTextItem);
+OpacityObserver.observe(mealVisualTextItem);
 
 mealMenuItem.forEach((els) => {
-  OpacityObserber.observe(els);
+  OpacityObserver.observe(els);
 });
 
-OpacityObserber.observe(mainVisualContainer);
+OpacityObserver.observe(mainVisualContainer);
 
 
 
