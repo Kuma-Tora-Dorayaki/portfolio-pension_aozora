@@ -471,7 +471,7 @@ header {
   font-family: var(--font-Kosugi);
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 22px;
   text-align: center;
   margin: 30px auto 0;
@@ -525,12 +525,13 @@ header {
   font-family: var(--font-Kosugi);
   font-style: normal;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 22px;
   text-align: center;
   margin: 10px auto 0;
   letter-spacing: 0.8em;
   width: 58px;
+  text-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2);
 }
 
 .dinner__container {
@@ -554,8 +555,8 @@ header {
   font-family: var(--font-Kosugi);
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 22px;
+  font-size: 14px;
+  line-height: 28px;
   color: var(--text_gray);
 }
 
@@ -939,6 +940,11 @@ footer {
     font-size: 24px;
     line-height: 36px;
   }
+
+.shop-name:hover {
+  color: var(--menu_bg_color);
+}
+
   
   /* =====  main visual (min: 768px) ===== */
   .main-visual-title {
@@ -1172,8 +1178,8 @@ footer {
   }
 
   .meal-text__item {
-    font-size: 16px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 36px;
   }
 
   /* ===== around (min: 768px)===== */
