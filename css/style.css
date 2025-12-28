@@ -447,6 +447,10 @@ header {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+.meal-visual-text__item {
+  opacity: 0;
+}
+
 .dinner__container,
 .breadekfast__container {
   width: 100%;
