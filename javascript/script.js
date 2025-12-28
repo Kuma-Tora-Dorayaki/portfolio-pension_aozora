@@ -11,6 +11,7 @@ const mealVisualTextItem = document.querySelector('.meal-visual-text__item');
 const aroundTextBlock = document.querySelectorAll('.around-text__block');
 const mealMenuItem = document.querySelectorAll('.meal-menu__item');
 const mainVisualContainer = document.querySelector('.main-visual__container');
+const shopName = document.querySelector('.shop-name');
 
 
 const updateHeaderHeight = () => {
@@ -113,6 +114,16 @@ const menuClick = (el,menuOption) => {
 
 menuClick(hamMenuList, menuCloseOptions);
 menuClick(headerNavMenuList);
+
+
+//  shop-name click ===============================================
+shopName.addEventListener('click', (event) => {
+  event.preventDefault();
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
 
 //  scroll animation ===============================================
 const scrollAnimation = (entries, observer) => {
