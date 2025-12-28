@@ -716,6 +716,7 @@ header {
 
 .mail-address {
   text-decoration: none;
+  color: var(--border-orange);
 }
 
 .mail-note-text__item {
@@ -781,8 +782,8 @@ header {
   font-family: var(--font-Kosugi);
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 22px;
+  font-size: 14px;
+  line-height: 28px;
   color: var(--text_gray);
   text-align: left;
   letter-spacing: 0.2em;
@@ -1281,7 +1282,7 @@ footer {
   }
 
   .mail-address:hover {
-    color: var(--border-orange);
+    color: var(--main_color_sky);
   }
 
   .mail-note-text__item {
