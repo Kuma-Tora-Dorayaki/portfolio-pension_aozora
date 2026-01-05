@@ -988,6 +988,19 @@ footer {
     line-height: 58px;
   }
 
+  .sample-sign__container {
+  width: 320px;
+  height: 320px;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.sample-sign__item {
+  font-size: 32px;
+  line-height: 64px;
+  letter-spacing: 0.2em;
+  color: var(--text_gray);
+}
+
   /* ===== section-name (min: 768px)===== */
   .section-name__container {
     width: 100%;
